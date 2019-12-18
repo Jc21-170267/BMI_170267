@@ -1,14 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:BMI_170267"
-             x:Class="BMI_170267.MainPage">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="R01_BMI.MainPage">
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="BMI計算" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="身長を入力(cm)" />
+            <Entry MaxLength="3" Placeholder="身長を入力" />
+            <Label Text="体重を入力(kg)" />
+            <Entry MaxLength="2" Placeholder="体重を入力" />
+            <Button Text="BMIを計算する" />
+            <Label Text="ボタンを押すとBMIを計算します" />
+
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
